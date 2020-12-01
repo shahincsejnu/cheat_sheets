@@ -36,4 +36,7 @@
 - git <command> --help
 - nano file_name
 - nano .gitignore  [after that can add the files that i want to ignore while commiting in github]
+- cat .git/HEAD
+- git branch b1
+- git checkout b1
 - 
