@@ -40,4 +40,6 @@
 - git branch b1
 - git checkout b1
 - git checkout -
+- git checkout -b1 b1 [create b1 branch and move there]
+- git branch -D b1 [to delete b1 branch]
 - 
