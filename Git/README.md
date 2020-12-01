@@ -43,4 +43,7 @@
 - git checkout -b1 b1 [create b1 branch and move there]
 - git branch -D b1 [to delete b1 branch]
 - ctrl + z  [for getting out from a running command in terminal]
+- git stash save "message"
+- git stash list
+- git stash apply
 - 
