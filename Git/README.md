@@ -3,6 +3,7 @@
 ## Introduction to git
 
 1. use SSH during cloning a repo, cause if we use HTTPS then need to give username and password every time but if we use SSH only once we need to give the SSH public key in github
+2. when we do pull, two types of work happen : fetch and merge
 
 
 
@@ -43,7 +44,23 @@
 - git checkout -b1 b1 [create b1 branch and move there]
 - git branch -D b1 [to delete b1 branch]
 - ctrl + z  [for getting out from a running command in terminal]
+- git stash
 - git stash save "message"
 - git stash list
 - git stash apply
+- git stash apply stash@{index}
+- git stash drop
+- git stash drop stash@{index}
+- git stash pop [will take lastl commit and delete it]
+- git stash pop stash@{index}
+- git cherry-pick <that commit hash which want to bring here>
+- git cherry-pick C1 C3  [apply that C1 & C3 changes]
+- git cherry-pick C1..C5 [apply a range of commits, C1 < C5, C1 not included]
+- git cherry-pick C1^..C5  [C1 included]
+- git revert <that commit hash which want to revert>
+- git fetch origin
+- git merge master
+- git pull origin master
+- git checkout --theirs --.
+- git checkout --ours --.
 - 
