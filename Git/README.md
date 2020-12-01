@@ -39,4 +39,5 @@
 - cat .git/HEAD
 - git branch b1
 - git checkout b1
+- git checkout -
 - 
