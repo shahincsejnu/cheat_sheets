@@ -38,21 +38,21 @@
 - nano file_name   [to open a file in the terminal, can edit also]
 - nano .gitignore  [after that can add the files that i want to ignore while commiting in github]
 - cat .git/HEAD  [we use 'cat' command to show(only no editing) something in the terminal, here .git/HEAD shows the current git head]
-- git branch b1  [to create a new branch named b1]
+- `git branch b1`  [to create a new branch named b1]
 - git checkout b1 [to go from current branch to b1 branch]
 - git checkout -  [to shift just previous branch]
 - git checkout -b1 b1 [create b1 branch and move there]
 - git branch -D b1 [to delete b1 branch]
 - ctrl + z  [for getting out from a running command in terminal]
-- git stash
-- git stash save "message"
-- git stash list
-- git stash apply
-- git stash apply stash@{index}
-- git stash drop
-- git stash drop stash@{index}
-- git stash pop [will take lastl commit and delete it]
-- git stash pop stash@{index}
+- git stash  [for saving modified things before moving other branches]
+- git stash save "message"  [same before just added message]
+- git stash list  [seeing all previous stashed list]
+- git stash apply [for adding all the stashed things]
+- git stash apply stash@{index}  [for adding spacific stashed item]
+- git stash drop  [for droping/deleting all stashed things]
+- git stash drop stash@{index}  [for droping/deleting specific stashed item]
+- git stash pop [will take last stashed item and delete it]
+- git stash pop stash@{index}  [will take specific stash and delete it]
 - git cherry-pick <that commit hash which want to bring here>
 - git cherry-pick C1 C3  [apply that C1 & C3 changes]
 - git cherry-pick C1..C5 [apply a range of commits, C1 < C5, C1 not included]
