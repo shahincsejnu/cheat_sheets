@@ -12,6 +12,7 @@
 
 ## Commands
 
+- `git --version`  [to see the current install version of git in your machine]
 - `git log`  [for viewing the commit history of a repo]
 - `cat path_of_a_file_x`  [for printing the contents of file x in terminal]
 - `ls` [for showing the files in current working directory]
@@ -45,7 +46,7 @@
 - `git branch b1`  [to create a new branch named b1]
 - `git checkout b1` [to go from current branch to b1 branch]
 - `git checkout -`  [to shift just previous branch]
-- `git checkout -b1` b1 [create b1 branch and move there]
+- `git checkout -b b1` [create b1 branch and move there]
 - `git branch -D b1` [to delete b1 branch]
 - `ctrl + z`  [for getting out from a running command in terminal]
 - `git stash`  [for saving modified things before moving other branches]
