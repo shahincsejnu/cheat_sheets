@@ -1,9 +1,12 @@
 # GIT Commands
 
-## Introduction to git
+## Introduction to git (version controling system)
 
 1. use SSH during cloning a repo, cause if we use HTTPS then need to give username and password every time but if we use SSH only once we need to give the SSH public key in github
 2. when we do pull, two types of work happen : fetch and merge
+3. semantic versioning [eg: 2.0.1 here it represents like (magor.minor.patch) way]
+4. working tree means what i have in locally that i did commit yet, working tree clean means there is nothing to commit in my local machine
+5. every commit will generate a unique hash
 
 
 
@@ -33,7 +36,7 @@
 - `git init` [for locally using git without cloning any repo]
 - `git remote -v` [for seeing the remote branches]
 - `git pull origin master`
-- `git commit --amend -m "message"`  [for amending last commit(most recent commit only) with present changes]
+- `git commit --amend -m "message"`  [for amending last commit(most recent commit only) with present changes, don't do ammend if you already pushed your commits]
 - `git add --help`
 - `git <command> --help`  [will show the details description of that command]
 - `nano file_name`   [to open a file in the terminal, can edit also]
@@ -59,8 +62,9 @@
 - `git cherry-pick C1..C5` [apply a range of commits, C1 < C5, C1 not included]
 - `git cherry-pick C1^..C5`  [C1 included]
 - `git revert <commit hash which want to revert>`
-- `git fetch origin`
-- `git merge master`
-- `git pull origin master`
-- `git checkout --theirs --.`  [when conflict happens to ]
-- `git checkout --ours --.`  [when coflict happens to ]
+- `git fetch origin`  [will bring all remote changes in current working directory but won't merge]
+- `git merge master`   [will merge]
+- `git pull origin master`  [will bring & merge]
+- `git push origin master` [wil go the local master branch changes to remote master branch]
+- `git checkout --theirs --.`  [when conflict happens then to take theirs changes use this command]
+- `git checkout --ours --.`  [when conflict happens then to take our/self changes use this command]
