@@ -62,5 +62,5 @@
 - `git fetch origin`
 - `git merge master`
 - `git pull origin master`
-- `git checkout --theirs --.`
-- `git checkout --ours --.`
+- `git checkout --theirs --.`  [when conflict happens to ]
+- `git checkout --ours --.`  [when coflict happens to ]
