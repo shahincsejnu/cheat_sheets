@@ -28,13 +28,20 @@
 - `git add -A`  
 - `git add file_name` [for staging specific file]  
 - `git commit -m "message"`   [for commiting (snapshot)]
+- `git commit -a -m "message"`  [will add/staged all unstaged files then will commit but be careful to use it]
 - `git push`  [for pushing the commits in github/git servers]
 - `git log -p commit_hash` [to see the changes in any particular commit]
 - `git branch`  [to see the local branches]
 - `git branch -r`  [to see the remote branches]
 - `git push origin master`
 - `mkdir x`  [for creating folder/directory named x in currnt directory]
+- `git diff`
+- `git diff --staged`
+- `git diff --cached`
 - `git init` [for locally using git without cloning any repo]
+- `git add *.C`
+- `git add LICENSE`
+- `git commit -m 'Initial Project Version'`
 - `git remote -v` [for seeing the remote branches]
 - `git pull origin master`
 - `git commit --amend -m "message"`  [for amending last commit(most recent commit only) with present changes, don't do ammend if you already pushed your commits]
@@ -69,3 +76,8 @@
 - `git push origin master` [wil go the local master branch changes to remote master branch]
 - `git checkout --theirs --.`  [when conflict happens then to take theirs changes use this command]
 - `git checkout --ours --.`  [when conflict happens then to take our/self changes use this command]
+- `gitk`  [to see the git tree of current directory]
+- `git rm PROJECTS.md`
+- `git log -p -2`
+- `git log --stat`
+- 
