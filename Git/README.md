@@ -7,6 +7,7 @@
 3. semantic versioning [eg: 2.0.1 here it represents like (magor.minor.patch) way]
 4. working tree means what i have in locally that i did commit yet, working tree clean means there is nothing to commit in my local machine
 5. every commit will generate a unique hash
+6. switching branches changes files in your working directory, git resets your working directory to look like it did the last time you committed on that branch
 
 
 
@@ -81,4 +82,16 @@
 - `git log -p -2`
 - `git log --stat`
 - `git log --oneline --decorate`  [to show where the branch pointers are pointing with also the commits with hash and commit message]
+- `git log branch_name`  [to show the logs of that branch]
+- `git log --all`  [to show the all logs of all branches]
+- `git branch -v`  [to see the last commit on each branch]
+- `git merge branch_name` 
+- `git branch --merged`  [to see which branches are already merged into the branch you're on]
+- `git branch --no-merged`  [to see all the branches that contain work you haven't yet merged in current branch]
+- `git branch -d branch_name` [to delete a branch, if any work is there unmerged than git will ask you to confirm deletion by using -D instead -d]
+- `git branch --merged branch_name`
+- `git branch --no-merged branch_name`
+- `git branch --move old_branch_name new_branch_name`
+- `git push --set-upstream origin new_branch_name`
+- `git push origin --delete old_branch_name`
 - 
