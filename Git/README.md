@@ -94,4 +94,9 @@
 - `git branch --move old_branch_name new_branch_name`
 - `git push --set-upstream origin new_branch_name`
 - `git push origin --delete old_branch_name`
+- `git fetch origin`
+- `git push origin branch_name`
+- `git push <remote> <branch>`
+- `git rebase master`  [to rebase current branch onto the master branch] [after doing this we can merge that branch with master branch by fast-forward marge]
+- `git log --oneline`  [to show the commits with short hash and message]
 - 
