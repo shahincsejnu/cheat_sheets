@@ -80,4 +80,5 @@
 - `git rm PROJECTS.md`
 - `git log -p -2`
 - `git log --stat`
+- `git log --oneline --decorate`  [to show where the branch pointers are pointing with also the commits with hash and commit message]
 - 
