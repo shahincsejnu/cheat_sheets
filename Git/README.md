@@ -8,21 +8,36 @@
 4. working tree means what i have in locally that i did not commit yet, working tree clean means there is nothing to commit in my local machine
 5. every commit will generate a unique hash
 6. switching branches changes files in your working directory, git resets your working directory to look like it did the last time you committed on that branch
+7. git only requires you to specify enough(4-6) characters of the hash to identify it uniquely
 
 
 
-## Commands
+# Commands
 
+# Terminal 
+- `pwd`
+- `whereis go`
+- `ls -la`
+- `touch README.md`
 - `git --version`  [to see the current install version of git in your machine]
-- `git log`  [for viewing the commit history of a repo]
 - `cat path_of_a_file_x`  [for printing the contents of file x in terminal]
 - `ls` [for showing the files in current working directory]
-- `git config --list`  [for showing all the configs]
 - `clear`  [for restarting the terminal with current directory]
 - `fish`  [to use helpul terminator]
 - `echo "hello world" > test.md`  [created a file test.md in current directory with writing "hello world" there]
 - `open path_of_a_file_x`  [for opening the file x]
 - `code .` [for opening current directory in vs code from terminal]
+- `mkdir x`  [for creating folder/directory named x in current directory]
+- `nano file_name`   [to open a file in the terminal, can edit also]
+- `nano .gitignore`  [after that can add the files that i want to ignore while commiting in github]
+- `cat .git/HEAD`  [we use 'cat' command to show(only no editing) something in the terminal, here .git/HEAD shows the current git head]
+- `ctrl + z`  [for getting out from a running command in terminal]
+
+
+# Git
+
+- `git log`  [for viewing the commit history of a repo]
+- `git config --list`  [for showing all the configs]
 - `git status`  [for seeing the current status of git working tree]
 - `git add .`   [for staging all the files]
 - `git add *`   [for staging all the files except the files that started with dot(.)]
@@ -35,7 +50,6 @@
 - `git branch`  [to see the local branches]
 - `git branch -r`  [to see the remote branches]
 - `git push origin master`
-- `mkdir x`  [for creating folder/directory named x in current directory]
 - `git diff`
 - `git diff --staged`
 - `git diff --cached`
@@ -48,15 +62,11 @@
 - `git commit --amend -m "message"`  [for amending last commit(most recent commit only) with present changes, don't do ammend if you already pushed your commits]
 - `git add --help`
 - `git <command> --help`  [will show the details description of that command]
-- `nano file_name`   [to open a file in the terminal, can edit also]
-- `nano .gitignore`  [after that can add the files that i want to ignore while commiting in github]
-- `cat .git/HEAD`  [we use 'cat' command to show(only no editing) something in the terminal, here .git/HEAD shows the current git head]
 - `git branch b1`  [to create a new branch named b1]
 - `git checkout b1` [to go from current branch to b1 branch]
 - `git checkout -`  [to shift just previous branch]
 - `git checkout -b b1` [create b1 branch and move there]
 - `git branch -D b1` [to delete b1 branch]
-- `ctrl + z`  [for getting out from a running command in terminal]
 - `git stash`  [for saving modified things before moving other branches]
 - `git stash save "message"`  [same before just added message]
 - `git stash list`  [seeing all previous stashed list]
@@ -99,10 +109,26 @@
 - `git push <remote> <branch>`
 - `git rebase master`  [to rebase current branch onto the master branch] [after doing this we can merge that branch with master branch by fast-forward marge]
 - `git log --oneline`  [to show the commits with short hash and message]
-- `pwd`
-- `whereis go`
-- `ls -la`
-- `touch README.md`
-- 
+- `git checkout commit_hash`  [detaching head, means attaching head to a commit instead of a branch]
 
+# Relative refs
+
+- `git checkout master^` [to checkout first parent of the master branch, first parent of the current commit(where currently master branch is in), head will shift there]
+- `git checkout master^^` [same but for first parent's parent]
+- `^`  [caret operator, to find the parent of the specified commit] [by using this head will shift]
+- `git checkout HEAD~5` [it do the same work of ^ but for 5 times, can use any number to go like ^ again and again, can also put no number then the branch_name will go to HEAD]
+
+
+# Branch forcing
+
+- `git branch -f master HEAD~3`  [moves (by force) the master branch to three parents behind HEAD, can use any branch name instead of master and that branch & HEAD branch can be different]
+
+
+# Reversing changes
+
+- [`git reset` reverts changes by moving a branch reference backwards to an older commit, it will move a branch backwards as if the commit had never been made in the first place]
+- `git reset HEAD~1`  []
+- [In order to reverse changes and share those reversed changes with others we need to use `git revert`]
+- `git revert HEAD` [new commit will occur below our head, because this new commit will introduce changes just happens in prev commit, that means new commit will be exactly reverse of the commit(where head were before this operation)]
+- [with reverting, you can push out your changes to share with others]
 
