@@ -4,8 +4,8 @@
 
 1. use SSH during cloning a repo, cause if we use HTTPS then need to give username and password every time but if we use SSH only once we need to give the SSH public key in github
 2. when we do pull, two types of work happen : fetch and merge
-3. semantic versioning [eg: 2.0.1 here it represents like (magor.minor.patch) way]
-4. working tree means what i have in locally that i did commit yet, working tree clean means there is nothing to commit in my local machine
+3. semantic versioning [eg: 2.0.1 here it represents like (major.minor.patch) way]
+4. working tree means what i have in locally that i did not commit yet, working tree clean means there is nothing to commit in my local machine
 5. every commit will generate a unique hash
 6. switching branches changes files in your working directory, git resets your working directory to look like it did the last time you committed on that branch
 
@@ -35,7 +35,7 @@
 - `git branch`  [to see the local branches]
 - `git branch -r`  [to see the remote branches]
 - `git push origin master`
-- `mkdir x`  [for creating folder/directory named x in currnt directory]
+- `mkdir x`  [for creating folder/directory named x in current directory]
 - `git diff`
 - `git diff --staged`
 - `git diff --cached`
@@ -99,4 +99,10 @@
 - `git push <remote> <branch>`
 - `git rebase master`  [to rebase current branch onto the master branch] [after doing this we can merge that branch with master branch by fast-forward marge]
 - `git log --oneline`  [to show the commits with short hash and message]
+- `pwd`
+- `whereis go`
+- `ls -la`
+- `touch README.md`
 - 
+
+
