@@ -32,6 +32,12 @@
 - `nano .gitignore`  [after that can add the files that i want to ignore while commiting in github]
 - `cat .git/HEAD`  [we use 'cat' command to show(only no editing) something in the terminal, here .git/HEAD shows the current git head]
 - `ctrl + z`  [for getting out from a running command in terminal]
+- `super key + shift + <- ->`
+- `shift + <- ->`
+- `super key + arrows`
+- `ctrl + d`
+- [in terminal every calling works like stack, fish->bash->fish->bash etc]
+- `ctrl + l`
 
 
 # Git
@@ -110,6 +116,10 @@
 - `git rebase master`  [to rebase current branch onto the master branch] [after doing this we can merge that branch with master branch by fast-forward marge]
 - `git log --oneline`  [to show the commits with short hash and message]
 - `git checkout commit_hash`  [detaching head, means attaching head to a commit instead of a branch]
+- `git clean -f -n`  [will permanently delete the untracked files]
+- 
+
+
 
 # Relative refs
 
@@ -131,4 +141,3 @@
 - [In order to reverse changes and share those reversed changes with others we need to use `git revert`]
 - `git revert HEAD` [new commit will occur below our head, because this new commit will introduce changes just happens in prev commit, that means new commit will be exactly reverse of the commit(where head were before this operation)]
 - [with reverting, you can push out your changes to share with others]
-
