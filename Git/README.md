@@ -38,6 +38,7 @@
 - `ctrl + d`
 - [in terminal every calling works like stack, fish->bash->fish->bash etc]
 - `ctrl + l`
+- `ctrl + back tick(``)` [for opening terminal below vs code]
 
 
 # Git
