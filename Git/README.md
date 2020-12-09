@@ -39,6 +39,11 @@
 - [in terminal every calling works like stack, fish->bash->fish->bash etc]
 - `ctrl + l`
 - `ctrl + back tick(``)` [for opening terminal below vs code]
+- `netstat | grep port_number`  [to check whether that port is open or not]
+- `fuser port_number/tcp` 
+- `fuser -k port_number/tcp`
+- `super_key + l` [for pc screen lock]
+- `godoc -http=":port_number"`
 
 
 # Git
