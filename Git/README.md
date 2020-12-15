@@ -28,7 +28,7 @@
 - `open path_of_a_file_x`  [for opening the file x]
 - `code .` [for opening current directory in vs code from terminal]
 - `mkdir x`  [for creating folder/directory named x in current directory]
-- `rm -rf folder_name` [to delete a folder/directory]
+- `rm -rf folder_or_file_name` [to delete a folder/directory/file]
 - `rm -rf *` [to delete all the folders/things of currect directory]
 - `nano file_name`   [to open a file in the terminal, can edit also]
 - `nano .gitignore`  [after that can add the files that i want to ignore while commiting in github]
