@@ -149,3 +149,19 @@
 - [In order to reverse changes and share those reversed changes with others we need to use `git revert`]
 - `git revert HEAD` [new commit will occur below our head, because this new commit will introduce changes just happens in prev commit, that means new commit will be exactly reverse of the commit(where head were before this operation)]
 - [with reverting, you can push out your changes to share with others]
+
+
+# git ignore
+
+- create a `.gitignore` file
+- add all the file that you want to ignore
+- need to untrack a tracked file to ignore it by `git rm -r --cached file_name` 
+- `*.a`
+- `/todo` [only ignore the todo file in the current directory, not subdirectory/todo]
+- `build/`  [ignore all files in any directory named build]
+- 
+
+
+
+
+  
