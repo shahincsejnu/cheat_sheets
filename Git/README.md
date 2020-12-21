@@ -127,6 +127,19 @@
 - `git clean -f -n`  [will permanently delete the untracked files]
 - 
 
+# git tags
+[Git supports two types of tags : `lightweight` and `annotated`]k
+
+## for more [see](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+
+- `git tag` [listing the existing tags in current repo]
+- `git tag -l "v1.8.5*"` [search for tags that match a particular pattern]
+
+## Annotated Tags
+
+- `git tag -a v1.4 -m "my version 1.4"` [creating an annotated tag in Git]
+- `git show version_name` [to show the tagger information, the date the commit was tagged and annonation message etc]
+
 
 
 # Relative refs
