@@ -46,6 +46,11 @@
 - `fuser -k port_number/tcp`
 - `super_key + l` [for pc screen lock]
 - `godoc -http=":port_number"`
+- `ps aux` [to see which processes are running in your machine]
+- `ip addr show` [to see the ethernet card in your machine including virtual ethernet card]
+- `users`  or `sudo users`  [to see the users, root user's user id is 0]
+- `id -u` [to get user id]
+- `id -g` [to get group id]
 
 
 # Git
