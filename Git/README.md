@@ -51,6 +51,7 @@
 - `users`  or `sudo users`  [to see the users, root user's user id is 0]
 - `id -u` [to get user id]
 - `id -g` [to get group id]
+- `file file_path` [`file` is a linux command, to print the type of the file which is in file_path]
 
 
 # Git
