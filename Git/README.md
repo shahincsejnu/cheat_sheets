@@ -86,6 +86,8 @@
 - `git checkout b1` [to go from current branch to b1 branch]
 - `git checkout -`  [to shift just previous branch]
 - `git checkout -b b1` [create b1 branch and move there]
+- `git checkout file_name` [it's kind of undo the file that has deleted/moved from the folder/directory before staging]
+- `git reset HEAD file_name` [to unstaging the file, can use . instead of file_name for all the files]
 - `git branch -D b1` [to delete b1 branch]
 - `git stash`  [for saving modified things before moving other branches]
 - `git stash save "message"`  [same before just added message]
@@ -108,7 +110,7 @@
 - `git checkout --theirs --.`  [when conflict happens then to take theirs changes use this command]
 - `git checkout --ours --.`  [when conflict happens then to take our/self changes use this command]
 - `gitk`  [to see the git tree of current directory]
-- `git rm PROJECTS.md`
+- `git rm file_name` [to delete the file from the directory and also bringing that deletion in staging area]
 - `git log -p -2`
 - `git log --stat`
 - `git log --oneline --decorate`  [to show where the branch pointers are pointing with also the commits with hash and commit message]
