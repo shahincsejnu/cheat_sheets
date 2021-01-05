@@ -123,7 +123,8 @@
 - `git branch -d branch_name` [to delete a branch, if any work is there unmerged than git will ask you to confirm deletion by using -D instead -d]
 - `git branch --merged branch_name`
 - `git branch --no-merged branch_name`
-- `git branch --move old_branch_name new_branch_name`
+- `git branch --move old_branch_name new_branch_name` [to rename the branch name]
+- `git branch -m prev_name_of_the_branch new_name_of_the_branch` [to rename the branch name]
 - `git push --set-upstream origin new_branch_name`
 - `git push origin --delete old_branch_name`
 - `git fetch origin`
