@@ -52,7 +52,8 @@
 - `id -u` [to get user id]
 - `id -g` [to get group id]
 - `file file_path` [`file` is a linux command, to print the type of the file which is in file_path]
-
+- `ctrl + h` [to show/hide all the hidden file]
+- `ctrl + l` [to see the path of current directory from files]
 
 # Git
 
